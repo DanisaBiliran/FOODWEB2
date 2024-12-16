@@ -123,6 +123,7 @@
             }
         });
 
+        //Either expiration date or shelf-life, but not both
         function validateForm() {
             const expirationDate = document.getElementById('expiration-date').value;
             const shelfLife = document.getElementById('shelf-life').value;
