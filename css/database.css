@@ -1,0 +1,100 @@
+@import "root.css";
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* MESSAGE */
+.message-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color:white;
+}
+.message-container h1 {
+    font-size: 1.5em; 
+}
+
+/* FORM CONTAINER */
+.container {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.493);
+    background-color: white; 
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%; 
+    max-width: 400px;
+}
+/* FORM */
+.signup-form {
+    display: flex;
+    flex-direction: column; 
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1598a5; /* Change border color on focus */
+}
+
+/* BUTTON */
+button {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+    padding: 10px;
+    background-color: #1598a5; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+button:hover {
+    background-color: #127a8e; 
+    transform: scale(1.2);
+}
+
+/* question */
+.question a{
+    color: var(--appbar);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+        width: 70%; /* Adjust width to fit smaller screens */
+        max-width: none; /* Remove max-width constraint on small screens */
+    }
+
+    .message-container h1 {
+        font-size: 1.2em; /* Adjust heading size for smaller screens */
+        color: white; 
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 1em; /* Ensure text size is readable on small devices */
+        padding: 12px;
+        margin-bottom: 10px; 
+    }
+}

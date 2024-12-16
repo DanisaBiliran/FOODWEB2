@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>foodTRACK Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Include Font Awesome -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1598a5;
+            color: #333;
+            height: auto; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+        }
+
+        /* Header */
+        .header {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.027);
+            position: relative; 
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0E6B73;
+            color: white;
+        }
+
+        .search-bar {
+            width: 100%; 
+            max-width: 500px; 
+            padding: 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: white;
+            border: 1px solid rgba(0, 0, 0, 0.192);
+            background-color: #4DB6B0;
+            box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.514);
+        }
+
+        .back-button {
+            font-size: 24px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-weight: bolder;
+        }
+
+        /* Title Section */
+        .title-container {
+            margin-top: 40px; 
+            padding: 20px;
+        }
+
+        .title-container h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        /* White Box Below Title */
+        .white-box {
+            background-color: white; 
+            width: 90%; 
+            max-width: 800px; 
+            height: auto; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px; 
+        }
+
+        /* Add Button with Plus Icon */
+        .add-button {
+            box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.555);
+            background-color: black; 
+            color: white;
+
+            margin-top: 20px; 
+            padding: 20px;
+            font-size: 32px; 
+            font-weight: bolder;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .add-button:hover {
+            transform: scale(1.2);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column; 
+                align-items: center; 
+                padding-bottom: 10px; 
+            }
+
+            .search-bar {
+                width: calc(100% - 60px); 
+                margin-bottom: 10px; 
+                max-width: none; 
+                font-size: 14px; 
+            }
+
+            .title-container h1 {
+                font-size: 28px;
+                text-align:center;
+            }
+
+            .white-box {
+                width: calc(100% - 40px); 
+            }
+
+            .add-button {
+                font-size: 24px; 
+                padding: 15px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div style="flex-grow: 1; display: flex; justify-content: center;">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+        <button class="back-button" onclick="window.location.href='/PROJECTS/FOODWEB/menu.php';">
+           <i class="fas fa-arrow-left"></i> 
+       </button>
+    </header>
+
+    <!-- Title Section for Sweets -->
+    <div class="title-container">
+        <h1>Sweets</h1>
+    </div>
+
+    <div class="white-box">
+        
+    </div>
+
+    <a href="/PROJECTS/FOODWEB/detailsSweets.php" class="no-decoration">
+       <button class="add-button"><i class="fas fa-plus"></i></button>
+    </a>
+    <br><br><br>
+
+</body>
+</html>

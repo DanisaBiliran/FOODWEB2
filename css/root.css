@@ -1,0 +1,17 @@
+/* 
+onclick="window.location.href='destination.html' "
+onclick="history.back()"
+&nbsp;
+unicode character
+*/
+
+:root{
+    --appbar: #0E6B73;
+    --primary-color: #1598a5;
+    --search-field: #4DB6B0;
+    --iconbutton: #0E6B73;
+    --iconlight:#A5D8D0;
+
+    --check: #4CAF50;
+    --remove: #D9534F;
+}

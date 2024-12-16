@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/about-terms-help-rate.css">
+    <title></title>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-button">&#9776;</button>
+        <img class="right-icon" src="icons/rate-light.png" alt="i">
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <p>&#9776;</p>
+        <a href="/PROJECTS/FOODWEB/menu.php" class="sidebar-item"><i class="fas fa-list icon-color"></i>&nbsp;&nbsp;&nbsp;Categories</a>
+        <a href="/PROJECTS/FOODWEB/termsConditions.html" class="sidebar-item"><i class="fa-solid fa-scroll"></i>&nbsp;&nbsp;&nbsp;Terms & Conditions</a>
+        <a href="/PROJECTS/FOODWEB/helpSupport.html" class="sidebar-item"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Help & Support</a>
+        <a href="/PROJECTS/FOODWEB/aboutUs.html" class="sidebar-item">&nbsp;<i class="fa-solid fa-info"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</a>
+        <a href="/PROJECTS/FOODWEB/rateUs.html" class="sidebar-item"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;&nbsp;&nbsp;Rate Us</a>
+    </div>
+
+    <br>
+    <h1>Rate Us</h1>
+
+    <!-- Ratings -->
+    <div id="star-container">
+        <div class="star-rating">
+            <input type="radio" id="star-5" name="rating" value="5" onclick="sendRating(5)" />
+            <label for="star-5" class="star">★</label>
+
+            <input type="radio" id="star-4" name="rating" value="4" onclick="sendRating(4)" />
+            <label for="star-4" class="star">★</label>
+
+            <input type="radio" id="star-3" name="rating" value="3" onclick="sendRating(3)" />
+            <label for="star-3" class="star">★</label>
+
+            <input type="radio" id="star-2" name="rating" value="2" onclick="sendRating(2)" />
+            <label for="star-2" class="star">★</label>
+
+            <input type="radio" id="star-1" name="rating" value="1" onclick="sendRating(1)" />
+            <label for="star-1" class="star">★</label>
+        </div>
+    </div>
+    <br>
+
+    <div class="text-container">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you for using foodTRACK! If you're enjoying the app, please take a moment to rate us on the Google Play Store. Your feedback helps us improve the app and provide the best possible experience.
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your rating and review mean a lot to us and the app's development. Thank you for your support!
+        </p>     
+    </div>
+
+    <br><br>
+    <script src="js/sidebar.js"></script>
+    
+    <script>
+        function sendRating(rating) {
+            const email = "FoodTrack@gmail.com";
+            const subject = "App Rating";
+            const body = `I would like to rate the app with ${rating} star(s). Please add any comments below:\n\nComments:\n`;
+            
+            // Open the user's email
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+    </script>
+</body>
+</html>
+
+
